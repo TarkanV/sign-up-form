@@ -20,17 +20,47 @@
         <div class="form-start">
             <h2>Spruce up your lawn with our collection of quirky garden gnomes! From traditional to trendy, we've got 'em all. Sign up now and get ready to gnome-ify your yard in no time. Your neighbors won't know what hit 'em!
             </h2>
+            <h2>Your inner child <i>craves</i> it.</h2>
         </div>
         <div class="form-container">
             <h2>Let's do this!</h2>
+            
             <form id="form">
-
+                <section class="input-container">
+                    <p>
+                        <label for="first-name">FIRST NAME</label>
+                        <input id="first-name" name="first-name" type="text">
+                    </p>
+                    <p class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </p>
+                    <p class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                    
+                    <p class="input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </p>
+                    
+                    <p class="input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </p>
+                    
+                    <p class="input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </p>
+                </section>  
             </form>
             
 
         </div>
         <div class="form-end">
-            <button>Create Account</button>
+            <button form="form">Create Account</button>
             <h2>Already have an account? <span><a href="">Log In</a></span></h2>  
         </div>
     </div>
