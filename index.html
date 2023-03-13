@@ -31,11 +31,11 @@
                 <section class="input-container">
                     <p>
                         <label for="first-name">FIRST NAME</label>
-                        <input id="first-name" name="first-name" type="text">
+                        <input id="first-name" name="first-name" type="text" required>
                     </p>
                     <p class="input">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </p>
                     <p class="input">
                         <label for="email">EMAIL</label>
@@ -49,20 +49,23 @@
                     
                     <p class="input">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input class="passgroup" required type="password" id="password" name="password">
+                        
                     </p>
                     
                     <p class="input">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <input class="passgroup" required type="password" id="confirm-password" name="confirm-password">
+                        <span></span>
                     </p>
+                    
                 </section>  
             </form>
             
 
         </div>
         <div class="form-end">
-            <button form="form">Create Account</button>
+            <button id="submit" form="form">Create Account</button>
             <h3>Already have an account? <span><a href="">Log In</a></span></h3>  
         </div>
     </div>

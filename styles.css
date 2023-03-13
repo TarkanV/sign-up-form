@@ -110,7 +110,7 @@ body::before {
   padding: 0 var(--content-padding);
   padding-top: 0.3rem;
   background-color: white;
-  box-shadow: 3px 2px 10px 0px rgb(161, 160, 160);
+  box-shadow: 2px 2px 10px 0px hsl(0, 1%, 75%);
   padding-bottom: 1.5rem;
 }
 .main .form-container .input-container {
@@ -137,14 +137,38 @@ body::before {
   flex-direction: column;
   width: 270px;
 }
+.main .form-container .input-container p label {
+  color: rgb(94, 94, 94);
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
 .main .form-container .input-container p input {
+  position: relative;
   width: 100%;
   padding: 0.4rem 0.5rem;
   border-radius: 5px;
+  border-style: solid;
+  border-color: lightgray;
+}
+.main .form-container .input-container p input:focus {
+  border-style: none;
+  outline: 3px solid cornflowerblue;
+  box-shadow: 1px 1px 5px lightgray;
+}
+.main .form-container .input-container p .valid-check.passgroup, .main .form-container .input-container p .valid-check:invalid {
+  border-color: red;
+}
+.main .form-container .input-container p .valid-check + span::before {
+  position: absolute;
+  content: "* Passwords do not match";
+  font-size: 14px;
+  color: red;
 }
 .main .form-end {
   margin-top: 2rem;
   padding: 0 var(--content-padding);
+  --button-color: hsl(0, 100%, 35%);
 }
 .main .form-end button {
   font-size: 1.3rem;
@@ -155,5 +179,15 @@ body::before {
   border-style: none;
   border-radius: 7px;
   box-shadow: 2px 3px 5px rgb(145, 145, 145);
-  background-color: hsl(0, 100%, 35%);
+  background-color: var(--button-color);
+}
+.main .form-end button:hover {
+  cursor: pointer;
+}
+.main .form-end button:active {
+  box-shadow: 2px 3px 5px -10px blue;
+}
+.main .form-end a {
+  text-decoration: none;
+  color: var(--button-color);
 }/*# sourceMappingURL=styles.css.map */
